@@ -1,0 +1,43 @@
+/home/chhun
+total 40
+drwxr-x--- 5 chhun chhun 4096 Mar 18 10:03 .
+drwxr-xr-x 3 root  root  4096 Mar 17 14:40 ..
+-rw------- 1 chhun chhun 2937 Mar 18 10:40 .bash_history
+-rw-r--r-- 1 chhun chhun  220 Mar 17 14:40 .bash_logout
+-rw-r--r-- 1 chhun chhun 3771 Mar 17 14:40 .bashrc
+drwx------ 2 chhun chhun 4096 Mar 17 14:40 .cache
+-rw-r--r-- 1 chhun chhun   60 Mar 17 15:07 .gitconfig
+-rw-rw-r-- 1 chhun chhun    0 Mar 19 10:04 .motd_shown
+-rw-r--r-- 1 chhun chhun  807 Mar 17 14:40 .profile
+-rw-r--r-- 1 chhun chhun    0 Mar 17 14:44 .sudo_as_admin_successful
+drwxr-xr-x 4 chhun chhun 4096 Mar 18 10:35 os-lab-p20240067
+drwxr-xr-x 3 chhun chhun 4096 Mar 17 14:41 os-se-p20240067
+--- Root directory (/) ---
+/
+bin
+bin.usr-is-merged
+boot
+dev
+etc
+home
+init
+lib
+lib.usr-is-merged
+lib64
+lost+found
+media
+mnt
+opt
+proc
+root
+run
+sbin
+sbin.usr-is-merged
+snap
+srv
+sys
+tmp
+usr
+var
+--- Back to home ---
+/home/chhun

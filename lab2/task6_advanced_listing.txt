@@ -1,0 +1,224 @@
+=== Task 6: Advanced Listing & Directory Audit ===
+--- Recursive Listing (ls -R) ---
+techcorp:
+engineering
+hr
+marketing
+
+techcorp/engineering:
+backend
+devops
+frontend
+
+techcorp/engineering/backend:
+app.js
+database.sql
+pipeline_backup.txt
+server_config.txt
+
+techcorp/engineering/devops:
+Dockerfile
+docker-compose.yml
+pipeline.txt
+security_audit.txt
+server_notice.txt
+
+techcorp/engineering/frontend:
+frontend_config.txt
+index.html
+styles.css
+
+techcorp/hr:
+onboarding
+policies
+
+techcorp/hr/onboarding:
+checklist.txt
+handbook.txt
+leave_policy.txt
+welcome_guide.txt
+
+techcorp/hr/policies:
+leave_policy.txt
+remote_work.txt
+
+techcorp/marketing:
+assets
+campaigns
+
+techcorp/marketing/assets:
+banner.jpg
+brochure.pdf
+logo.png
+logo_brief.txt
+
+techcorp/marketing/campaigns:
+q1_2026_launch.txt
+social_media.txt
+
+--- Sort by Size: engineering/ (ls -lS) ---
+total 4
+-rw-r--r-- 1 chhun chhun 26 Mar 19 10:19 frontend_config.txt
+-rw-r--r-- 1 chhun chhun  0 Mar 19 10:19 index.html
+-rw-r--r-- 1 chhun chhun  0 Mar 19 10:19 styles.css
+total 8
+-rw-r--r-- 1 chhun chhun 29 Mar 19 10:52 pipeline_backup.txt
+-rw-r--r-- 1 chhun chhun 29 Mar 19 10:19 server_config.txt
+-rw-r--r-- 1 chhun chhun  0 Mar 19 10:19 app.js
+-rw-r--r-- 1 chhun chhun  0 Mar 19 10:19 database.sql
+total 12
+-rw-r--r-- 1 chhun chhun 48 Mar 19 10:44 server_notice.txt
+-rw-r--r-- 1 chhun chhun 34 Mar 19 10:52 security_audit.txt
+-rw-r--r-- 1 chhun chhun 29 Mar 19 10:20 pipeline.txt
+-rw-r--r-- 1 chhun chhun  0 Mar 19 10:20 Dockerfile
+-rw-r--r-- 1 chhun chhun  0 Mar 19 10:20 docker-compose.yml
+
+--- Sort by Time: techcorp/ (ls -lt) ---
+total 8
+-rw-r--r-- 1 chhun chhun 32 Mar 19 10:18 remote_work.txt
+-rw-r--r-- 1 chhun chhun 39 Mar 19 10:18 leave_policy.txt
+total 12
+-rw-r--r-- 1 chhun chhun 39 Mar 19 10:47 leave_policy.txt
+-rw-r--r-- 1 chhun chhun 23 Mar 19 10:44 handbook.txt
+-rw-r--r-- 1 chhun chhun  0 Mar 19 10:18 checklist.txt
+-rw-r--r-- 1 chhun chhun 52 Mar 19 10:18 welcome_guide.txt
+total 8
+-rw-r--r-- 1 chhun chhun 35 Mar 19 10:20 social_media.txt
+-rw-r--r-- 1 chhun chhun 32 Mar 19 10:20 q1_2026_launch.txt
+
+--- Human-Readable (ls -lh) ---
+total 4.0K
+-rw-r--r-- 1 chhun chhun  0 Mar 19 10:21 banner.jpg
+-rw-r--r-- 1 chhun chhun  0 Mar 19 10:21 brochure.pdf
+-rw-r--r-- 1 chhun chhun  0 Mar 19 10:21 logo.png
+-rw-r--r-- 1 chhun chhun 22 Mar 19 10:44 logo_brief.txt
+total 12K
+-rw-r--r-- 1 chhun chhun  0 Mar 19 10:20 Dockerfile
+-rw-r--r-- 1 chhun chhun  0 Mar 19 10:20 docker-compose.yml
+-rw-r--r-- 1 chhun chhun 29 Mar 19 10:20 pipeline.txt
+-rw-r--r-- 1 chhun chhun 34 Mar 19 10:52 security_audit.txt
+-rw-r--r-- 1 chhun chhun 48 Mar 19 10:44 server_notice.txt
+
+--- Reverse Sort by Size (ls -rlS) ---
+total 8
+-rw-r--r-- 1 chhun chhun  0 Mar 19 10:19 database.sql
+-rw-r--r-- 1 chhun chhun  0 Mar 19 10:19 app.js
+-rw-r--r-- 1 chhun chhun 29 Mar 19 10:19 server_config.txt
+-rw-r--r-- 1 chhun chhun 29 Mar 19 10:52 pipeline_backup.txt
+
+--- Reverse Sort by Time (ls -rlt) ---
+total 12
+-rw-r--r-- 1 chhun chhun 52 Mar 19 10:18 welcome_guide.txt
+-rw-r--r-- 1 chhun chhun  0 Mar 19 10:18 checklist.txt
+-rw-r--r-- 1 chhun chhun 23 Mar 19 10:44 handbook.txt
+-rw-r--r-- 1 chhun chhun 39 Mar 19 10:47 leave_policy.txt
+
+--- Combined: Recursive + Human-Readable + Sort by Size (ls -lhRS) ---
+techcorp/:
+total 12K
+drwxr-xr-x 5 chhun chhun 4.0K Mar 19 10:17 engineering
+drwxr-xr-x 4 chhun chhun 4.0K Mar 19 10:17 hr
+drwxr-xr-x 4 chhun chhun 4.0K Mar 19 10:45 marketing
+
+techcorp/engineering:
+total 12K
+drwxr-xr-x 2 chhun chhun 4.0K Mar 19 10:52 backend
+drwxr-xr-x 2 chhun chhun 4.0K Mar 19 10:52 devops
+drwxr-xr-x 2 chhun chhun 4.0K Mar 19 10:54 frontend
+
+techcorp/engineering/backend:
+total 8.0K
+-rw-r--r-- 1 chhun chhun 29 Mar 19 10:52 pipeline_backup.txt
+-rw-r--r-- 1 chhun chhun 29 Mar 19 10:19 server_config.txt
+-rw-r--r-- 1 chhun chhun  0 Mar 19 10:19 app.js
+-rw-r--r-- 1 chhun chhun  0 Mar 19 10:19 database.sql
+
+techcorp/engineering/devops:
+total 12K
+-rw-r--r-- 1 chhun chhun 48 Mar 19 10:44 server_notice.txt
+-rw-r--r-- 1 chhun chhun 34 Mar 19 10:52 security_audit.txt
+-rw-r--r-- 1 chhun chhun 29 Mar 19 10:20 pipeline.txt
+-rw-r--r-- 1 chhun chhun  0 Mar 19 10:20 Dockerfile
+-rw-r--r-- 1 chhun chhun  0 Mar 19 10:20 docker-compose.yml
+
+techcorp/engineering/frontend:
+total 4.0K
+-rw-r--r-- 1 chhun chhun 26 Mar 19 10:19 frontend_config.txt
+-rw-r--r-- 1 chhun chhun  0 Mar 19 10:19 index.html
+-rw-r--r-- 1 chhun chhun  0 Mar 19 10:19 styles.css
+
+techcorp/hr:
+total 8.0K
+drwxr-xr-x 2 chhun chhun 4.0K Mar 19 10:47 onboarding
+drwxr-xr-x 2 chhun chhun 4.0K Mar 19 10:52 policies
+
+techcorp/hr/onboarding:
+total 12K
+-rw-r--r-- 1 chhun chhun 52 Mar 19 10:18 welcome_guide.txt
+-rw-r--r-- 1 chhun chhun 39 Mar 19 10:47 leave_policy.txt
+-rw-r--r-- 1 chhun chhun 23 Mar 19 10:44 handbook.txt
+-rw-r--r-- 1 chhun chhun  0 Mar 19 10:18 checklist.txt
+
+techcorp/hr/policies:
+total 8.0K
+-rw-r--r-- 1 chhun chhun 39 Mar 19 10:18 leave_policy.txt
+-rw-r--r-- 1 chhun chhun 32 Mar 19 10:18 remote_work.txt
+
+techcorp/marketing:
+total 8.0K
+drwxr-xr-x 2 chhun chhun 4.0K Mar 19 10:46 assets
+drwxr-xr-x 2 chhun chhun 4.0K Mar 19 10:54 campaigns
+
+techcorp/marketing/assets:
+total 4.0K
+-rw-r--r-- 1 chhun chhun 22 Mar 19 10:44 logo_brief.txt
+-rw-r--r-- 1 chhun chhun  0 Mar 19 10:21 banner.jpg
+-rw-r--r-- 1 chhun chhun  0 Mar 19 10:21 brochure.pdf
+-rw-r--r-- 1 chhun chhun  0 Mar 19 10:21 logo.png
+
+techcorp/marketing/campaigns:
+total 8.0K
+-rw-r--r-- 1 chhun chhun 35 Mar 19 10:20 social_media.txt
+-rw-r--r-- 1 chhun chhun 32 Mar 19 10:20 q1_2026_launch.txt
+
+--- Challenge Investigation ---
+total 12
+-rw-r--r-- 1 chhun chhun 39 Mar 19 10:47 leave_policy.txt
+-rw-r--r-- 1 chhun chhun 23 Mar 19 10:44 handbook.txt
+-rw-r--r-- 1 chhun chhun  0 Mar 19 10:18 checklist.txt
+-rw-r--r-- 1 chhun chhun 52 Mar 19 10:18 welcome_guide.txt
+techcorp/marketing/:
+total 8.0K
+drwxr-xr-x 2 chhun chhun 4.0K Mar 19 10:46 assets
+drwxr-xr-x 2 chhun chhun 4.0K Mar 19 10:54 campaigns
+
+techcorp/marketing/assets:
+total 4.0K
+-rw-r--r-- 1 chhun chhun  0 Mar 19 10:21 banner.jpg
+-rw-r--r-- 1 chhun chhun  0 Mar 19 10:21 brochure.pdf
+-rw-r--r-- 1 chhun chhun  0 Mar 19 10:21 logo.png
+-rw-r--r-- 1 chhun chhun 22 Mar 19 10:44 logo_brief.txt
+
+techcorp/marketing/campaigns:
+total 8.0K
+-rw-r--r-- 1 chhun chhun 32 Mar 19 10:20 q1_2026_launch.txt
+-rw-r--r-- 1 chhun chhun 35 Mar 19 10:20 social_media.txt
+total 12
+-rw-r--r-- 1 chhun chhun  0 Mar 19 10:20 docker-compose.yml
+-rw-r--r-- 1 chhun chhun  0 Mar 19 10:20 Dockerfile
+-rw-r--r-- 1 chhun chhun 29 Mar 19 10:20 pipeline.txt
+-rw-r--r-- 1 chhun chhun 34 Mar 19 10:52 security_audit.txt
+-rw-r--r-- 1 chhun chhun 48 Mar 19 10:44 server_notice.txt
+total 40K
+drwxr-x--- 5 chhun chhun 4.0K Mar 18 10:03 .
+drwxr-xr-x 3 root  root  4.0K Mar 17 14:40 ..
+drwx------ 2 chhun chhun 4.0K Mar 17 14:40 .cache
+drwxr-xr-x 4 chhun chhun 4.0K Mar 18 10:35 os-lab-p20240067
+drwxr-xr-x 3 chhun chhun 4.0K Mar 17 14:41 os-se-p20240067
+-rw-r--r-- 1 chhun chhun 3.7K Mar 17 14:40 .bashrc
+-rw------- 1 chhun chhun 2.9K Mar 18 10:40 .bash_history
+-rw-r--r-- 1 chhun chhun  807 Mar 17 14:40 .profile
+-rw-r--r-- 1 chhun chhun  220 Mar 17 14:40 .bash_logout
+-rw-r--r-- 1 chhun chhun   60 Mar 17 15:07 .gitconfig
+-rw-rw-r-- 1 chhun chhun    0 Mar 19 10:04 .motd_shown
+-rw-r--r-- 1 chhun chhun    0 Mar 17 14:44 .sudo_as_admin_successful

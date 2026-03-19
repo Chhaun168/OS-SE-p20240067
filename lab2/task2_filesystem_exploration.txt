@@ -1,0 +1,236 @@
+/
+total 2804
+drwxr-xr-x  22 root root    4096 Mar 19 10:03 .
+drwxr-xr-x  22 root root    4096 Mar 19 10:03 ..
+lrwxrwxrwx   1 root root       7 Apr 22  2024 bin -> usr/bin
+drwxr-xr-x   2 root root    4096 Feb 26  2024 bin.usr-is-merged
+drwxr-xr-x   2 root root    4096 Apr 22  2024 boot
+drwxr-xr-x  15 root root    3860 Mar 19 10:04 dev
+drwxr-xr-x  89 root root    4096 Mar 19 10:04 etc
+drwxr-xr-x   3 root root    4096 Mar 17 14:40 home
+-rwxr-xr-x   1 root root 2781568 Dec 12 08:58 init
+lrwxrwxrwx   1 root root       7 Apr 22  2024 lib -> usr/lib
+drwxr-xr-x   2 root root    4096 Apr  8  2024 lib.usr-is-merged
+lrwxrwxrwx   1 root root       9 Apr 22  2024 lib64 -> usr/lib64
+drwx------   2 root root   16384 Mar 17 14:38 lost+found
+drwxr-xr-x   2 root root    4096 Feb 10 07:54 media
+drwxr-xr-x   6 root root    4096 Mar 17 14:38 mnt
+drwxr-xr-x   2 root root    4096 Feb 10 07:54 opt
+dr-xr-xr-x 215 root root       0 Mar 19 10:03 proc
+drwx------   3 root root    4096 Feb 10 07:56 root
+drwxr-xr-x  19 root root     560 Mar 19 10:04 run
+lrwxrwxrwx   1 root root       8 Apr 22  2024 sbin -> usr/sbin
+drwxr-xr-x   2 root root    4096 Mar 31  2024 sbin.usr-is-merged
+drwxr-xr-x   2 root root    4096 Mar 17 14:39 snap
+drwxr-xr-x   2 root root    4096 Feb 10 07:54 srv
+dr-xr-xr-x  13 root root       0 Mar 19 10:03 sys
+drwxrwxrwt   8 root root    4096 Mar 19 10:04 tmp
+drwxr-xr-x  12 root root    4096 Feb 10 07:54 usr
+drwxr-xr-x  13 root root    4096 Mar 17 14:39 var
+--- /etc ---
+/etc
+PackageKit
+X11
+adduser.conf
+alternatives
+apparmor
+apparmor.d
+apport
+apt
+bash.bashrc
+bash_completion
+bash_completion.d
+bindresvport.blacklist
+binfmt.d
+byobu
+ca-certificates
+ca-certificates.conf
+cloud
+console-setup
+credstore
+credstore.encrypted
+cron.d
+cron.daily
+cron.hourly
+cron.monthly
+cron.weekly
+cron.yearly
+crontab
+dbus-1
+dconf
+debconf.conf
+debian_version
+default
+deluser.conf
+depmod.d
+dhcp
+dhcpcd.conf
+dpkg
+e2scrub.conf
+environment
+environment.d
+ethertypes
+fonts
+fstab
+fuse.conf
+gai.conf
+glvnd
+gnutls
+gprofng.rc
+groff
+group
+group-
+gshadow
+gshadow-
+gss
+gtk-3.0
+host.conf
+hostname
+hosts
+init.d
+inputrc
+iproute2
+issue
+issue.net
+kernel
+landscape
+ld.so.cache
+ld.so.conf
+ld.so.conf.d
+ldap
+legal
+libaudit.conf
+libnl-3
+locale.alias
+locale.conf
+locale.gen
+localtime
+logcheck
+login.defs
+logrotate.conf
+logrotate.d
+lsb-release
+machine-id
+magic
+magic.mime
+mailcap
+mailcap.order
+manpath.config
+mime.types
+mke2fs.conf
+modprobe.d
+modules
+modules-load.d
+mtab
+nanorc
+netconfig
+netplan
+network
+networkd-dispatcher
+networks
+newt
+nsswitch.conf
+opt
+os-release
+pam.conf
+pam.d
+passwd
+passwd-
+perl
+pm
+polkit-1
+profile
+profile.d
+protocols
+python3
+python3.12
+rc0.d
+rc1.d
+rc2.d
+rc3.d
+rc4.d
+rc5.d
+rc6.d
+rcS.d
+resolv.conf
+rmt
+rpc
+rsyslog.conf
+rsyslog.d
+security
+selinux
+sensors.d
+sensors3.conf
+services
+sgml
+shadow
+shadow-
+shells
+skel
+ssh
+ssl
+subgid
+subgid-
+subuid
+subuid-
+sudo.conf
+sudo_logsrvd.conf
+sudoers
+sudoers.d
+supercat
+sysctl.conf
+sysctl.d
+systemd
+terminfo
+timezone
+tmpfiles.d
+ubuntu-advantage
+ucf.conf
+udev
+update-manager
+update-motd.d
+vconsole.conf
+vim
+vtrgb
+vulkan
+wgetrc
+wsl-distribution.conf
+wsl.conf
+xattr.conf
+xdg
+xml
+zsh_command_not_found
+--- /var ---
+/var
+backups
+cache
+crash
+lib
+local
+lock
+log
+mail
+opt
+run
+snap
+spool
+tmp
+--- /home ---
+/home
+total 12
+drwxr-xr-x  3 root  root  4096 Mar 17 14:40 .
+drwxr-xr-x 22 root  root  4096 Mar 19 10:03 ..
+drwxr-x---  5 chhun chhun 4096 Mar 18 10:03 chhun
+--- /tmp ---
+/tmp
+total 28
+drwxrwxrwt  8 root root 4096 Mar 19 10:14 .
+drwxr-xr-x 22 root root 4096 Mar 19 10:03 ..
+drwxrwxrwx  2 root root   60 Mar 19 10:03 .X11-unix
+drwx------  2 root root 4096 Mar 19 10:04 snap-private-tmp
+drwx------  3 root root 4096 Mar 19 10:09 systemd-private-cfd03415b9a345fcb26d1713915164f4-polkit.service-HClwjP
+drwx------  3 root root 4096 Mar 19 10:04 systemd-private-cfd03415b9a345fcb26d1713915164f4-systemd-logind.service-vth1SU
+drwx------  3 root root 4096 Mar 19 10:04 systemd-private-cfd03415b9a345fcb26d1713915164f4-systemd-resolved.service-OJoILo
+drwx------  3 root root 4096 Mar 19 10:04 systemd-private-cfd03415b9a345fcb26d1713915164f4-systemd-timesyncd.service-kQupRl
+--- Home (~) ---
+/home/chhun

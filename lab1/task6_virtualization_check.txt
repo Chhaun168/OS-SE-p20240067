@@ -1,6 +1,0 @@
-wsl
-Flags:                                fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon rep_good nopl xtopology cpuid tsc_known_freq pni pclmulqdq vmx ssse3 fma cx16 pdcm pcid sse4_1 sse4_2 movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch pti ssbd ibrs ibpb stibp tpr_shadow ept vpid ept_ad fsgsbase bmi1 avx2 smep bmi2 erms invpcid rdseed adx smap xsaveopt vnmi md_clear flush_l1d arch_capabilities
-Hypervisor vendor:                    Microsoft
-Vulnerability Srbds:                  Unknown: Dependent on hypervisor status
-6.6.87.2-microsoft-standard-WSL2
-DESKTOP-CSCEQ45

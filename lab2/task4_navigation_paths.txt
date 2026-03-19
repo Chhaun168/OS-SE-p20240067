@@ -1,0 +1,32 @@
+=== Task 4: Navigation with Paths ===
+--- Absolute path to HR/policies ---
+/home/chhun/os-se-p20240067/os-lab-p20240067/lab2/techcorp/hr/policies
+leave_policy.txt
+remote_work.txt
+--- Up to hr/ ---
+/home/chhun/os-se-p20240067/os-lab-p20240067/lab2/techcorp/hr
+--- Relative path to onboarding/ ---
+/home/chhun/os-se-p20240067/os-lab-p20240067/lab2/techcorp/hr/onboarding
+checklist.txt
+welcome_guide.txt
+--- Sideways to engineering/frontend/ ---
+/home/chhun/os-se-p20240067/os-lab-p20240067/lab2/techcorp/engineering/frontend
+app_config.txt
+index.html
+styles.css
+--- Up two levels to techcorp/ ---
+/home/chhun/os-se-p20240067/os-lab-p20240067/lab2/techcorp
+--- Absolute path to marketing/campaigns/ ---
+/home/chhun/os-se-p20240067/os-lab-p20240067/lab2/techcorp/marketing/campaigns
+q1_launch.txt
+social_media.txt
+--- cd - (back to previous directory) ---
+/home/chhun/os-se-p20240067/os-lab-p20240067/lab2/techcorp
+--- Challenge Navigation ---
+/home/chhun/os-se-p20240067/os-lab-p20240067/lab2/techcorp/engineering/backend
+/home/chhun/os-se-p20240067/os-lab-p20240067/lab2/techcorp/marketing/assets
+/usr/bin
+/home/chhun/os-se-p20240067/os-lab-p20240067/lab2/techcorp/marketing/assets
+/home/chhun/os-se-p20240067/os-lab-p20240067/lab2/techcorp/hr/onboarding
+checklist.txt
+welcome_guide.txt

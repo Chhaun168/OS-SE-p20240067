@@ -1,6 +1,0 @@
-    PID TTY          TIME CMD
-    290 pts/0    00:00:00 bash
-   1355 pts/0    00:00:00 sleep
-   1356 pts/0    00:00:00 sleep
-   1357 pts/0    00:00:00 python3
-   1372 pts/0    00:00:00 ps
