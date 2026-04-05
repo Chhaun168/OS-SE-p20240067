@@ -32,3 +32,15 @@ const char* tc_get_uptime(void) {
 int tc_get_cpu_count(void) {
     return (int)sysconf(_SC_NPROCESSORS_ONLN);
 }
+long tc_get_memory_mb(void) {
+    FILE *fp;
+    long mem_kb = 0;
+
+    fp = fopen("/proc/meminfo", "r");
+    if (fp == NULL) return -1;
+
+    fscanf(fp, "MemTotal: %ld kB", &mem_kb);
+    fclose(fp);
+
+    return mem_kb / 1024; // convert to MB
+}
