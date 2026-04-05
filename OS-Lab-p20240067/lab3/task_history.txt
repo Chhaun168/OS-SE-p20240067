@@ -1,0 +1,201 @@
+=== Full Command History ===
+  673  ldd /tmp/test_link >> task4_shared_objects.txt
+  674  echo "--- Count of ssh libraries ---" >> task4_shared_objects.txt
+  675  ldd /usr/bin/ssh | wc -l >> task4_shared_objects.txt
+  676  readlink -f /lib/x86_64-linux-gnu/libc.so.6
+  677  ldd /usr/bin/ssh
+  678  ldd /usr/bin/ssh | wc -l
+  679  ls /lib/x86_64-linux-gnu/libm*
+  680  ls -la /lib/x86_64-linux-gnu/libc.so.6
+  681  readlink -f /lib/x86_64-linux-gnu/libc.so.6
+  682  ldd /tmp/test_link
+  683  cat task4_shared_objects.txt
+  684  cd ~/os-se-p20240067/os-lab-p20240067/OS-Lab-p20240067/lab3
+  685  mkdir -p shared_lib_lab
+  686  cd shared_lib_lab
+  687  cat > techcorp_sysinfo.h << 'EOF'
+  688  #ifndef TECHCORP_SYSINFO_H
+  689  #define TECHCORP_SYSINFO_H
+  690  // Returns the hostname of the machine
+  691  const char* tc_get_hostname(void);
+  692  // Returns the current uptime in a human-readable string
+  693  const char* tc_get_uptime(void);
+  694  // Returns the number of CPU cores
+  695  int tc_get_cpu_count(void);
+  696  #endif
+  697  EOF
+  698  cat techcorp_sysinfo.h
+  699  echo "--- API Design (header file) ---" >> ../task5_shared_library.txt
+  700  cat techcorp_sysinfo.h >> ../task5_shared_library.txt
+  701  const char* tc_get_uptime(void) {
+  702  }
+  703  int tc_get_cpu_count(void) {
+  704  }
+  705  EOF
+  706  cat > techcorp_sysinfo.c << 'EOF'
+  707  #include "techcorp_sysinfo.h"
+  708  #include <stdio.h>
+  709  #include <stdlib.h>
+  710  #include <string.h>
+  711  #include <unistd.h>
+  712  static char hostname_buf[256];
+  713  static char uptime_buf[128];
+  714  const char* tc_get_hostname(void) {
+  715      if (gethostname(hostname_buf, sizeof(hostname_buf)) == 0)
+  716          return hostname_buf;
+  717      return "unknown";
+  718  }
+  719  const char* tc_get_uptime(void) {
+  720      FILE *fp = fopen("/proc/uptime", "r");
+  721      if (fp) {
+  722          double up_seconds;
+  723          if (fscanf(fp, "%lf", &up_seconds) == 1) {
+  724              int hours = (int)(up_seconds / 3600);
+  725              int minutes = ((int)up_seconds % 3600) / 60;
+  726              snprintf(uptime_buf, sizeof(uptime_buf),
+  727                       "%d hours, %d minutes", hours, minutes);
+  728          }
+  729          fclose(fp);
+  730          return uptime_buf;
+  731      }
+  732      return "unknown";
+  733  }
+  734  int tc_get_cpu_count(void) {
+  735      return (int)sysconf(_SC_NPROCESSORS_ONLN);
+  736  }
+  737  EOF
+  738  gcc -fPIC -c techcorp_sysinfo.c -o techcorp_sysinfo.o
+  739  gcc -shared -o libtechcorp_sysinfo.so techcorp_sysinfo.o
+  740  file libtechcorp_sysinfo.so
+  741  ls -l libtechcorp_sysinfo.so
+  742  echo "" >> ../task5_shared_library.txt
+  743  echo "--- Partner A: Compiled shared library ---" >> ../task5_shared_library.txt
+  744  file libtechcorp_sysinfo.so >> ../task5_shared_library.txt
+  745  ls -l libtechcorp_sysinfo.so >> ../task5_shared_library.txt
+  746  ls
+  747  cp libtechcorp_sysinfo.so ..
+  748  cp techcorp_sysinfo.h ..
+  749  cd ..
+  750  ls
+  751  os-se-<YourStudentID>/
+  752  └── os-lab-<YourStudentID>/
+  753  ls shared_lib_lab
+  754  cd shared_lib_lab
+  755  ls
+  756  gcc -fPIC -c techcorp_sysinfo.c -o techcorp_sysinfo.o
+  757  gcc -shared -o libtechcorp_sysinfo.so techcorp_sysinfo.o
+  758  file libtechcorp_sysinfo.so
+  759  cd ..
+  760  history | tail -n 50
+  761  nano Readme.md
+  762  nano README.md
+  763  git status
+  764  cd ~/os-se-p20240067/os-lab-p20240067
+  765  git status
+  766  git add .
+  767  git commit -m "Lab 3 completed - tasks 1,2,4,5 (VM skipped temporary)"
+  768  git push
+  769  ssh ssh2.rathpisey.site
+  770  cd ~/os-se-p20240067/os-lab-p20240067/OS-Lab-p20240067/lab3
+  771  echo "=== Full Command History ===" > task_history.txt
+  772  history | tail -n 100 >> task_history.txt
+  673  ldd /tmp/test_link >> task4_shared_objects.txt
+  674  echo "--- Count of ssh libraries ---" >> task4_shared_objects.txt
+  675  ldd /usr/bin/ssh | wc -l >> task4_shared_objects.txt
+  676  readlink -f /lib/x86_64-linux-gnu/libc.so.6
+  677  ldd /usr/bin/ssh
+  678  ldd /usr/bin/ssh | wc -l
+  679  ls /lib/x86_64-linux-gnu/libm*
+  680  ls -la /lib/x86_64-linux-gnu/libc.so.6
+  681  readlink -f /lib/x86_64-linux-gnu/libc.so.6
+  682  ldd /tmp/test_link
+  683  cat task4_shared_objects.txt
+  684  cd ~/os-se-p20240067/os-lab-p20240067/OS-Lab-p20240067/lab3
+  685  mkdir -p shared_lib_lab
+  686  cd shared_lib_lab
+  687  cat > techcorp_sysinfo.h << 'EOF'
+  688  #ifndef TECHCORP_SYSINFO_H
+  689  #define TECHCORP_SYSINFO_H
+  690  // Returns the hostname of the machine
+  691  const char* tc_get_hostname(void);
+  692  // Returns the current uptime in a human-readable string
+  693  const char* tc_get_uptime(void);
+  694  // Returns the number of CPU cores
+  695  int tc_get_cpu_count(void);
+  696  #endif
+  697  EOF
+  698  cat techcorp_sysinfo.h
+  699  echo "--- API Design (header file) ---" >> ../task5_shared_library.txt
+  700  cat techcorp_sysinfo.h >> ../task5_shared_library.txt
+  701  const char* tc_get_uptime(void) {
+  702  }
+  703  int tc_get_cpu_count(void) {
+  704  }
+  705  EOF
+  706  cat > techcorp_sysinfo.c << 'EOF'
+  707  #include "techcorp_sysinfo.h"
+  708  #include <stdio.h>
+  709  #include <stdlib.h>
+  710  #include <string.h>
+  711  #include <unistd.h>
+  712  static char hostname_buf[256];
+  713  static char uptime_buf[128];
+  714  const char* tc_get_hostname(void) {
+  715      if (gethostname(hostname_buf, sizeof(hostname_buf)) == 0)
+  716          return hostname_buf;
+  717      return "unknown";
+  718  }
+  719  const char* tc_get_uptime(void) {
+  720      FILE *fp = fopen("/proc/uptime", "r");
+  721      if (fp) {
+  722          double up_seconds;
+  723          if (fscanf(fp, "%lf", &up_seconds) == 1) {
+  724              int hours = (int)(up_seconds / 3600);
+  725              int minutes = ((int)up_seconds % 3600) / 60;
+  726              snprintf(uptime_buf, sizeof(uptime_buf),
+  727                       "%d hours, %d minutes", hours, minutes);
+  728          }
+  729          fclose(fp);
+  730          return uptime_buf;
+  731      }
+  732      return "unknown";
+  733  }
+  734  int tc_get_cpu_count(void) {
+  735      return (int)sysconf(_SC_NPROCESSORS_ONLN);
+  736  }
+  737  EOF
+  738  gcc -fPIC -c techcorp_sysinfo.c -o techcorp_sysinfo.o
+  739  gcc -shared -o libtechcorp_sysinfo.so techcorp_sysinfo.o
+  740  file libtechcorp_sysinfo.so
+  741  ls -l libtechcorp_sysinfo.so
+  742  echo "" >> ../task5_shared_library.txt
+  743  echo "--- Partner A: Compiled shared library ---" >> ../task5_shared_library.txt
+  744  file libtechcorp_sysinfo.so >> ../task5_shared_library.txt
+  745  ls -l libtechcorp_sysinfo.so >> ../task5_shared_library.txt
+  746  ls
+  747  cp libtechcorp_sysinfo.so ..
+  748  cp techcorp_sysinfo.h ..
+  749  cd ..
+  750  ls
+  751  os-se-<YourStudentID>/
+  752  └── os-lab-<YourStudentID>/
+  753  ls shared_lib_lab
+  754  cd shared_lib_lab
+  755  ls
+  756  gcc -fPIC -c techcorp_sysinfo.c -o techcorp_sysinfo.o
+  757  gcc -shared -o libtechcorp_sysinfo.so techcorp_sysinfo.o
+  758  file libtechcorp_sysinfo.so
+  759  cd ..
+  760  history | tail -n 50
+  761  nano Readme.md
+  762  nano README.md
+  763  git status
+  764  cd ~/os-se-p20240067/os-lab-p20240067
+  765  git status
+  766  git add .
+  767  git commit -m "Lab 3 completed - tasks 1,2,4,5 (VM skipped temporary)"
+  768  git push
+  769  ssh ssh2.rathpisey.site
+  770  cd ~/os-se-p20240067/os-lab-p20240067/OS-Lab-p20240067/lab3
+  771  echo "=== Full Command History ===" > task_history.txt
+  772  history | tail -n 100 >> task_history.txt
