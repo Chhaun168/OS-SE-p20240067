@@ -1,0 +1,13 @@
+=== Task 3: GRUB Configuration (Skipped) ===
+
+This task requires running a Virtual Machine (VM) environment.
+
+Due to hardware limitations on this laptop, it is not possible to run a VM smoothly.
+
+Therefore, Task 3 (GRUB configuration and recovery tasks) could not be performed.
+
+All other tasks (Task 1, Task 2, Task 4, and Task 5) have been completed successfully.
+
+It takes too much time just to run VM, it has been 30mins and so on and even I am writing this now, it won't open for me so I decide to skip this task. 
+
+I hope teacher understand my problem. 
