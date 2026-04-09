@@ -1,0 +1,20 @@
+  794  gcc -shared -o libtechcorp_sysinfo.so techcorp_sysinfo.o
+  795  gcc sysinfo_test_v2.c -L. -ltechcorp_sysinfo -o sysinfo_test_v2
+  796  LD_LIBRARY_PATH=. ./sysinfo_test_v2
+  797  git add .
+  798  git commit -m "done sysinfo"
+  799  git puh
+  800  git push
+  801  ssh ssh2.rathpisey.site
+  802  cd ~/os-se-p20240067
+  803  cd ~/os-se-p20240067/os-lab-p20240067\OS-Class-Activities-p20240067
+  804  cd ~/os-se-p20240067/os-lab-p20240067/OS-Class-Activities-p20240067
+  805  mkdir -p activity2/{task1,task2,task3_shm,task4_mq,screenshots}
+  806  cd activity2/task1
+  807  nano forkchild.c
+  808  gcc -o forkchild forkchild.c
+  809  ./forkchild > result_forkchild.txt 2>&1
+  810  ./forkchild
+  811  ps -ef --forest | grep forkchild
+  812  cat result_forkchild.txt
+  813  history | tail -n 20 > command_used_forkchild.txt

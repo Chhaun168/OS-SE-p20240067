@@ -1,0 +1,20 @@
+  811  ps -ef --forest | grep forkchild
+  812  cat result_forkchild.txt
+  813  history | tail -n 20 > command_used_forkchild.txt
+  814  cd ~/os-se-p20240067/os-lab-p20240067/OS-Class-Activities-p20240067/activity2/task2
+  815  nano winprocess.c
+  816  nano winprocesss.c
+  817  nano winprocess.c
+  818  cd ~/os-se-p20240067/os-lab-p20240067/OS-Class-Activities-p20240067/activity2/task3_shm
+  819  nano shm_demo.c
+  820  gcc -o shm_demo shm_demo.c -lrt
+  821  ./shm_demo
+  822  cd ~/os-se-p20240067/os-lab-p20240067/OS-Class-Activities-p20240067/activity2/task3_shm
+  823  nano shm-producer.c
+  824  nano shm-consumer.c
+  825  gcc -o shm-producer shm-producer.c -lrt
+  826  gcc -o shm-consumer shm-consumer.c -lrt
+  827  ./shm-producer
+  828  ./shm-consumer > result-shm-ipc.txt
+  829  cat result-shm-ipc.txt
+  830  history | tail -n 20 > command_used_shm.txt

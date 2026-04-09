@@ -1,0 +1,20 @@
+  822  cd ~/os-se-p20240067/os-lab-p20240067/OS-Class-Activities-p20240067/activity2/task3_shm
+  823  nano shm-producer.c
+  824  nano shm-consumer.c
+  825  gcc -o shm-producer shm-producer.c -lrt
+  826  gcc -o shm-consumer shm-consumer.c -lrt
+  827  ./shm-producer
+  828  ./shm-consumer > result-shm-ipc.txt
+  829  cat result-shm-ipc.txt
+  830  history | tail -n 20 > command_used_shm.txt
+  831  cd ../task4_mq
+  832  nano common.h
+  833  nano sender.c
+  834  nano receiver.c
+  835  gcc -o sender sender.c -lrt
+  836  gcc -o receiver receiver.c -lrt
+  837  ./sender
+  838  ./receiver
+  839  ./receiver > result-mq-ipc.txt
+  840  cat result-mq-ipc.txt
+  841  history | tail -n 20 > command_used_mq.txt

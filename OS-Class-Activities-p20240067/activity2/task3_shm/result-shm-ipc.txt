@@ -1,0 +1,1 @@
+Consumer read: Hello, this is shared memory IPC!

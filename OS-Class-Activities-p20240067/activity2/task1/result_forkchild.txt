@@ -1,0 +1,9 @@
+total 32
+drwxr-xr-x 2 chhun chhun  4096 Apr  8 22:40 .
+drwxr-xr-x 7 chhun chhun  4096 Apr  8 22:37 ..
+-rwxr-xr-x 1 chhun chhun 16400 Apr  8 22:40 forkchild
+-rw-r--r-- 1 chhun chhun   857 Apr  8 22:39 forkchild.c
+-rw-r--r-- 1 chhun chhun     0 Apr  8 22:40 result_forkchild.txt
+Parent process (PID: 1760) — creating child...
+Parent waiting for child (PID: 1761)...
+Parent: child finished with status 0
