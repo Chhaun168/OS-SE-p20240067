@@ -1,0 +1,7 @@
+=== Task 5: Orphan & Zombie Processes ===
+--- Orphan Process Output ---
+--- Orphan Process Output ---
+Parent process exiting...
+Child process (orphan), new parent PID: 5972
+--- Zombie Process Output ---
+chhun       7348  0.0  0.0   4092  1920 pts/0    S+   01:59   0:00 grep --color=auto zombie
