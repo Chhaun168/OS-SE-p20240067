@@ -1,0 +1,20 @@
+  869  nano server.c
+  870  nano client.c
+  871  gcc -o server server.c
+  872  gcc -o client client.c
+  873  ./server
+  874  ./server > result_server.txt 2>&1 &
+  875  sleep 1
+  876  cat result_server.txt result_client.txt > result_socket.txt
+  877  history | tail -n 20 > command_used_socket.txt
+  878  ./server
+  879  cd ../task2_threads
+  880  nano threads.c
+  881  gcc -o threads threads.c -pthread
+  882  ./threads
+  883  nano threads_mutex.c
+  884  gcc -o threads_mutex threads_mutex.c -pthread
+  885  ./threads_mutex
+  886  ./threads > result_threads.txt 2>&1
+  887  ./threads_mutex > result_threads_mutex.txt 2>&1
+  888  history | tail -n 20 > command_used_threads.txt

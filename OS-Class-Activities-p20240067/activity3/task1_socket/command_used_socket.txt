@@ -1,0 +1,20 @@
+  858  ssh ssh2.rathpisey.site
+  859  cd ~/os-se-p20240067\os-lab-p20240067\OS-Class-Activities-p20240067
+  860  cd ~/os-se-p20240067
+  861  cd ~/os-se-p20240067\os-lab-p20240067\OS-Class-Activities-p20240067
+  862  cd ~/os-se-p20240067/os-lab-p20240067
+  863  cd ~/os-se-p20240067/os-lab-p20240067/OS-Class-Activities-p20240067
+  864  mkdir -p activity3/{task1_socket,task2_threads,task3_java,screenshots}
+  865  cd os-class-activities-p20240067/activity3
+  866  cd OS-Class-Activities-p20240067/activity3
+  867  cd activity3
+  868  cd task1_socket
+  869  nano server.c
+  870  nano client.c
+  871  gcc -o server server.c
+  872  gcc -o client client.c
+  873  ./server
+  874  ./server > result_server.txt 2>&1 &
+  875  sleep 1
+  876  cat result_server.txt result_client.txt > result_socket.txt
+  877  history | tail -n 20 > command_used_socket.txt

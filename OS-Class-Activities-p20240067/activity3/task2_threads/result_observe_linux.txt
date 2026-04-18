@@ -1,0 +1,18 @@
+chhun       4716     313    4716  0    5 19:47 pts/0    00:00:00 ./threads_observe
+chhun       4716     313    4717  0    5 19:47 pts/0    00:00:00 ./threads_observe
+chhun       4716     313    4718  0    5 19:47 pts/0    00:00:00 ./threads_observe
+chhun       4716     313    4719  0    5 19:47 pts/0    00:00:00 ./threads_observe
+chhun       4716     313    4720  0    5 19:47 pts/0    00:00:00 ./threads_observe
+chhun       4739     313    4739  0    1 19:48 pts/0    00:00:00 grep --color=auto threads_observe
+    PID    SPID TTY          TIME CMD
+   4716    4716 pts/0    00:00:00 threads_observe
+   4716    4717 pts/0    00:00:00 threads_observe
+   4716    4718 pts/0    00:00:00 threads_observe
+   4716    4719 pts/0    00:00:00 threads_observe
+   4716    4720 pts/0    00:00:00 threads_observe
+--- /proc task ---
+4716
+4717
+4718
+4719
+4720
