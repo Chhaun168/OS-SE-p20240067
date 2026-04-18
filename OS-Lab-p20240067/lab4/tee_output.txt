@@ -1,0 +1,15 @@
+total 836
+drwxr-xr-x 91 root root       4096 Apr 19 01:13 .
+drwxr-xr-x 27 root root       4096 Apr 18 18:31 ..
+drwxr-xr-x  3 root root       4096 Apr 18 19:23 .java
+-rw-------  1 root root          0 Feb 10 07:54 .pwd.lock
+-rw-r--r--  1 root root        862 Feb 10 07:54 .resolv.conf.systemd-resolved.bak
+-rw-r--r--  1 root root        208 Feb 10 07:54 .updated
+drwxr-xr-x  2 root root       4096 Feb 10 07:56 PackageKit
+drwxr-xr-x  8 root root       4096 Apr 18 19:23 X11
+-rw-r--r--  1 root root       3444 Jul  6  2023 adduser.conf
+drwxr-xr-x  2 root root       4096 Apr 18 19:23 alternatives
+drwxr-xr-x  2 root root       4096 Feb 10 07:56 apparmor
+drwxr-xr-x  9 root root       4096 Mar 20 10:23 apparmor.d
+drwxr-xr-x  3 root root       4096 Feb 10 07:56 apport
+drwxr-xr-x  8 root root       4096 Feb 10 07:56 apt

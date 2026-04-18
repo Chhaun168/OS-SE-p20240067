@@ -1,0 +1,53 @@
+=== Task 3: Data Analysis ===
+--- Log Level Counts ---
+      3 ERROR
+      4 INFO
+      2 WARNING
+--- ERROR Messages ---
+ERROR Failed to connect to database
+ERROR Invalid password attempt
+ERROR Connection timeout
+--- Messages Only ---
+User login successful
+Failed to connect to database
+Disk space low
+File uploaded successfully
+Invalid password attempt
+System backup completed
+High memory usage
+Connection timeout
+User logout successful
+--- Log with Line Numbers ---
+     1	INFO User login successful
+     2	ERROR Failed to connect to database
+     3	WARNING Disk space low
+     4	INFO File uploaded successfully
+     5	ERROR Invalid password attempt
+     6	INFO System backup completed
+     7	WARNING High memory usage
+     8	ERROR Connection timeout
+     9	INFO User logout successful
+--- Search 'user' (case insensitive) ---
+INFO User login successful
+INFO User logout successful
+--- Challenge Data Analysis ---
+37 system.log
+ERROR Failed to connect to database
+lufsseccus nigol resU OFNI
+esabatad ot tcennoc ot deliaF RORRE
+wol ecaps ksiD GNINRAW
+yllufsseccus dedaolpu eliF OFNI
+tpmetta drowssap dilavnI RORRE
+detelpmoc pukcab metsyS OFNI
+egasu yromem hgiH GNINRAW
+tuoemit noitcennoC RORRE
+lufsseccus tuogol resU OFNI
+INFO User login successful
+CRITICAL Failed to connect to database
+WARNING Disk space low
+INFO File uploaded successfully
+CRITICAL Invalid password attempt
+INFO System backup completed
+WARNING High memory usage
+CRITICAL Connection timeout
+INFO User logout successful

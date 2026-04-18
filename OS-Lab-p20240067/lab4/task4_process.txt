@@ -1,0 +1,18 @@
+=== Task 4: Process Management ===
+--- Current Processes (top snapshot) ---
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.2  0.3  21896 12616 ?        Ss   Apr18   0:17 /sbin/init
+root           2  0.0  0.0   3120  2048 ?        Sl   Apr18   0:00 /init
+root           7  0.0  0.0   3176  1960 ?        Sl   Apr18   0:04 plan9 --control-socket 7 --log-level 4 --server-fd 8 --pipe-fd 10 --log-truncate
+root          54  1.7  0.3  66824 15456 ?        S<s  Apr18   2:26 /usr/lib/systemd/systemd-journald
+root         100  0.1  0.1  25280  6144 ?        Ss   Apr18   0:14 /usr/lib/systemd/systemd-udevd
+systemd+     116  0.0  0.3  21460 12288 ?        Ss   Apr18   0:01 /usr/lib/systemd/systemd-resolved
+systemd+     117  0.0  0.1  91028  7680 ?        Ssl  Apr18   0:03 /usr/lib/systemd/systemd-timesyncd
+root         170  0.0  0.0   4236  2560 ?        Ss   Apr18   0:00 /usr/sbin/cron -f -P
+message+     172  0.1  0.1   9636  4864 ?        Ss   Apr18   0:09 @dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+--- Background Jobs ---
+[1]+  Running                 sleep 60 &
+--- Search for sleep process ---
+chhun       6721  0.0  0.0   3128  1664 pts/0    S    01:37   0:00 sleep 60
+chhun       6741  0.0  0.0   4092  1920 pts/0    S+   01:38   0:00 grep --color=auto sleep
+--- After killing process ---
