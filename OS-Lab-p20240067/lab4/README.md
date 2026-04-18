@@ -27,7 +27,7 @@ The screenshots below document the **interactive tools**, **process observations
 ---
 
 ### Screenshot 1 — Task 4: `top` Output
-![top output](images/top_screenshot.png)
+![top output](images/task4_top.png)
 
 ---
 
