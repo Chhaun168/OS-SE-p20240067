@@ -1,0 +1,10 @@
+Upload step 1
+Download step 1
+Process step 1
+Upload step 2
+Download step 2
+Process step 2
+Upload step 3
+Download step 3
+Process step 3
+All tasks done.
