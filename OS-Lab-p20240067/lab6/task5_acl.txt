@@ -1,0 +1,9 @@
+# file: opt/techcorp/devproject
+# owner: root
+# group: devteam
+# flags: -st
+user::rwx
+group::rwx
+mask::rwx
+other::---
+
