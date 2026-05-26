@@ -1,0 +1,8 @@
+  File: /opt/techcorp/devproject
+  Size: 4096      	Blocks: 8          IO Block: 4096   directory
+Device: 8,48	Inode: 39257       Links: 2
+Access: (0770/drwxrwx---)  Uid: (    0/    root)   Gid: ( 1003/ devteam)
+Access: 2026-05-26 14:30:45.522274530 +0700
+Modify: 2026-05-26 14:31:17.439630859 +0700
+Change: 2026-05-26 14:31:17.439630859 +0700
+ Birth: 2026-05-26 14:30:45.522274530 +0700
