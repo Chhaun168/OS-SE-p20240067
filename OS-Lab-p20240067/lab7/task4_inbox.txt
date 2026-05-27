@@ -1,0 +1,5 @@
+=== inbox permissions ===
+drwx-wx-wx 2 chhun chhun 4096 May 26 16:10 /home/chhun/public_inbox
+=== inbox files as owner ===
+total 0
+-rw-rw-r-- 1 dev_alice dev_alice 0 May 26 16:10 test_from_dev_alice.txt

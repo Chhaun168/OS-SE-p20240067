@@ -1,0 +1,6 @@
+=== guestbook permissions ===
+-rw------- 1 chhun chhun 35 May 27 16:03 /home/chhun/guestbook.txt
+=== sign_book permissions ===
+-rwsr-xr-x 1 chhun chhun 16096 May 27 16:03 /home/chhun/bin/sign_book
+=== guestbook contents ===
+Visitor signed: Hello from dev_bob

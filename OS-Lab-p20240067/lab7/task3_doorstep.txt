@@ -1,0 +1,6 @@
+========================================
+Welcome, chhun
+Users currently logged in: 1
+Server uptime: up 25 minutes
+Random tech quote: There is no place like 127.0.0.1.
+========================================

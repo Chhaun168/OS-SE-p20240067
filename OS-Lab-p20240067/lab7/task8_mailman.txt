@@ -1,0 +1,9 @@
+=== mailman output ===
+Sent message to chhun
+Messages sent: 1
+=== my inbox ===
+total 4
+-rw-r--r-- 1 chhun     chhun     98 May 27 16:08 message_from_chhun.txt
+-rw-rw-r-- 1 dev_alice dev_alice  0 May 26 16:10 test_from_dev_alice.txt
+=== messages I received ===
+Hello chhun, I am an automated bot written by chhun. I successfully read your secret word: mutex.
