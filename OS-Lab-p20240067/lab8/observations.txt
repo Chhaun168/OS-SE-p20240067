@@ -1,0 +1,19 @@
+Run 1 final inventory: 66
+Result: Suspicious
+
+Run 2 final inventory: 70
+Result: Suspicious
+
+Run 3 final inventory: 62
+Result: Suspicious
+
+Run 4 final inventory: 78
+Result: Suspicious
+
+Run 5 final inventory: 60
+Result: Suspicious
+
+Explanation:
+
+The vulnerable buy_widget script suffered from a Time-of-Check to Time-of-Use (TOC-TOU) race condition. Multiple bot processes read the same inventory value before other processes finished updating it. Because the inventory read, calculation, and write operations were not protected by mutual exclusion, concurrent processes overwrote each other's updates, causing inconsistent final inventory values. The exact result depended on how the operating system scheduler interleaved process execution.
+

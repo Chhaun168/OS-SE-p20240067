@@ -1,0 +1,26 @@
+#!/bin/bash
+
+script_name="$(basename "$0")"
+
+for file in *; do
+
+    if [ ! -f "$file" ]; then
+        continue
+    fi
+
+    if [ "$file" = "$script_name" ]; then
+        continue
+    fi
+
+    if [[ "$file" != *.* ]]; then
+        continue
+    fi
+
+    extension="${file##*.}"
+
+    mkdir -p "$extension"
+
+    mv "$file" "$extension/"
+done
+
+echo "Cleanup complete."
