@@ -1,0 +1,11 @@
+=== public DR permissions ===
+drwxr-xr-x 2 chhun chhun 4096 Jun  9 14:25 /home/chhun/os-lab-deadlock/public_dr_alpha
+drwxr-xr-x 2 chhun chhun 4096 Jun  9 14:56 /home/chhun/os-lab-deadlock/public_dr_beta
+=== running cross sync processes ===
+chhun       2924  0.0  0.0   4756  3328 pts/0    S+   15:05   0:00 /bin/bash /home/chhun/bin/cross_sync_alpha
+chhun       2927  0.0  0.0   4756  3328 pts/2    S+   15:05   0:00 /bin/bash /home/chhun/bin/cross_sync_beta
+=== partner role ===
+Partner username: se-nhem-phada
+My role: Player A
+=== note ===
+Cross-site deadlock simulated locally because students used separate WSL installations.

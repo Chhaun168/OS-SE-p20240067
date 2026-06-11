@@ -1,0 +1,11 @@
+=== working folder ===
+/home/chhun/os-lab-deadlock
+=== vault directories ===
+drwxr-xr-x 2 chhun chhun 4096 Jun  9 14:11 /home/chhun/os-lab-deadlock/vault_alpha
+drwxr-xr-x 2 chhun chhun 4096 Jun  9 14:11 /home/chhun/os-lab-deadlock/vault_beta
+=== vault lock files ===
+-rw-r--r-- 1 chhun chhun 0 Jun  9 14:11 /home/chhun/os-lab-deadlock/vault_alpha/vault.lock
+-rw-r--r-- 1 chhun chhun 0 Jun  9  2026 /home/chhun/os-lab-deadlock/vault_beta/vault.lock
+=== vault marker files ===
+Vault Alpha local resource for p20240067
+Vault Beta local resource for p20240067

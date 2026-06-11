@@ -1,0 +1,16 @@
+=== teardown script ===
+-rwxr-xr-x 1 chhun chhun 334 Jun 11 15:40 /home/chhun/bin/teardown
+=== process check ===
+No sync processes found.
+=== final working folder ===
+/home/chhun/os-lab-deadlock
+/home/chhun/os-lab-deadlock/public_dr_alpha
+/home/chhun/os-lab-deadlock/public_dr_alpha/vault.lock
+/home/chhun/os-lab-deadlock/public_dr_beta
+/home/chhun/os-lab-deadlock/public_dr_beta/vault.lock
+/home/chhun/os-lab-deadlock/vault_alpha
+/home/chhun/os-lab-deadlock/vault_alpha/README.txt
+/home/chhun/os-lab-deadlock/vault_alpha/vault.lock
+/home/chhun/os-lab-deadlock/vault_beta
+/home/chhun/os-lab-deadlock/vault_beta/README.txt
+/home/chhun/os-lab-deadlock/vault_beta/vault.lock
