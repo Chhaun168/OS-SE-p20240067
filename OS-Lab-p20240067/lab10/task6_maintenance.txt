@@ -1,0 +1,54 @@
+=== maintenance script permissions ===
+-rwxr-xr-x 1 chhun chhun 953 Jun 16 14:42 /home/chhun/bin/maintenance
+=== installed cron jobs ===
+# Lab10 GRADED session job - fires once at 2:30 PM on 2026-06-16 (lab session)
+30 14 16 6 * /home/chhun/bin/lab_session_job >> /home/chhun/os-lab-automation/logs/cron_session_job.log 2>&1
+
+# Lab10 GRADED deadline job - fires once at 2:30 PM on 2026-06-22 (before deadline)
+30 14 22 6 * /home/chhun/bin/deadline_job >> /home/chhun/os-lab-automation/logs/cron_deadline_job.log 2>&1# Lab10 heartbeat - runs every minute
+* * * * * date '+\%Y-\%m-\%d \%H:\%M:\%S heartbeat' >> /home/chhun/os-lab-automation/logs/heartbeat.log 2>&1
+# Lab10 file backup - every 2 minutes (TEST interval)
+*/2 * * * * /home/chhun/bin/backup_project >> /home/chhun/os-lab-automation/logs/cron_backup.log 2>&1
+# Lab10 maintenance - log rotation + health check, every 2 minutes (TEST interval)
+*/2 * * * * /home/chhun/bin/maintenance >> /home/chhun/os-lab-automation/logs/cron_maintenance.log 2>&1
+# 
+# Each task to run has to be defined through a single line
+# indicating with different fields when the task will be run
+# and what command to run for the task
+# 
+# To define the time you can provide concrete values for
+# minute (m), hour (h), day of month (dom), month (mon),
+# and day of week (dow) or use '*' in these fields (for 'any').
+# 
+# Notice that tasks will be started based on the cron's system
+# daemon's notion of time and timezones.
+# 
+# Output of the crontab jobs (including errors) is sent through
+# email to the user the crontab file belongs to (unless redirected).
+# 
+# For example, you can run a backup of all your user accounts
+# at 5 a.m every week with:
+# 0 5 * * 1 tar -zcf /var/backups/home.tgz /home/
+# 
+# For more information see the manual pages of crontab(5) and cron(8)
+# 
+# m h  dom mon dow   command
+=== health report (multiple entries = cron ran it) ===
+----- health check at 2026-06-16 14:42:30 -----
+disk usage of home : 1%
+my processes       : 8
+load / uptime      :  14:42:30 up 37 min,  1 user,  load average: 0.38, 0.10, 0.03
+logs rotated       : 0
+status             : OK (below 90% threshold)
+----- health check at 2026-06-16 14:44:01 -----
+disk usage of home : 1%
+my processes       : 11
+load / uptime      :  14:44:01 up 39 min,  1 user,  load average: 0.82, 0.29, 0.10
+logs rotated       : 0
+status             : OK (below 90% threshold)
+----- health check at 2026-06-16 14:46:01 -----
+disk usage of home : 1%
+my processes       : 9
+load / uptime      :  14:46:01 up 41 min,  1 user,  load average: 0.20, 0.26, 0.11
+logs rotated       : 0
+status             : OK (below 90% threshold)

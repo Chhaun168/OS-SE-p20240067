@@ -1,0 +1,11 @@
+=== script permissions ===
+-rwxr-xr-x 1 chhun chhun 405 Jun 16 14:07 /home/chhun/bin/automation_demo
+=== log contents ===
+2026-06-16 14:07:29 | automation_demo started by user chhun
+2026-06-16 14:07:29 | working directory is /home/chhun/os-se-p20240067/os-lab-p20240067/OS-Lab-p20240067/lab10
+2026-06-16 14:07:29 | home directory is /home/chhun
+2026-06-16 14:07:29 | automation_demo finished successfully
+2026-06-16 14:07:34 | automation_demo started by user chhun
+2026-06-16 14:07:34 | working directory is /home/chhun/os-se-p20240067/os-lab-p20240067/OS-Lab-p20240067/lab10
+2026-06-16 14:07:34 | home directory is /home/chhun
+2026-06-16 14:07:34 | automation_demo finished successfully
